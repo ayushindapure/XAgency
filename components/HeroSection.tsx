@@ -1,0 +1,229 @@
+import React from 'react'
+import Link from 'next/link'
+import { ArrowRight, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
+import { TextEffect } from '@/components/motion-primitives/text-effect'
+import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
+import { HeroHeader } from './hero5-header'
+import { SafariDemo } from './SafariDemo'
+import LogoCloud from './logo-cloud'
+import { LineShadowTextDemo } from './LineShadowTextDemo'
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+import { AnimatedShinyTextDemo } from './AnimatedShinyTextDemo'
+import { HoverBorderGradientDemo } from './HoverBorderGradientDemo'
+import CardsOnImages from './CardsOnImages'
+import Projects from './Projects'
+// import { Marquee3D } from './Marquee3D'
+import { SpinningTextBasic } from './SpiningTextBasics'
+import { MarqueeDemo } from './MarqueeDemo'
+import Iridescence from './Iridescence'
+
+const transitionVariants = {
+    item: {
+        hidden: {
+            opacity: 0,
+            filter: 'blur(12px)',
+            y: 12,
+        },
+        visible: {
+            opacity: 1,
+            filter: 'blur(0px)',
+            y: 0,
+            transition: {
+                type: 'spring',
+                bounce: 0.3,
+                duration: 1.5,
+            },
+        },
+    },
+}
+
+export default function HeroSection() {
+    return (
+        <>
+            {/* <HeroHeader /> */}
+            <main className="overflow-hidden">
+                <div
+                    aria-hidden
+                    className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block">
+                    <div className="w-140 h-320 -translate-y-87.5 absolute left-0 top-0 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsla(0,0%,85%,.08)_0,hsla(0,0%,55%,.02)_50%,hsla(0,0%,45%,0)_80%)]" />
+                    <div className="h-320 absolute left-0 top-0 w-60 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]" />
+                    <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
+                </div>
+                <section>
+                    <div className="relative pt-24 md:pt-36">
+                    <AnimatedGroup variants={transitionVariants}>
+                        <AnimatedShinyTextDemo/>
+                        
+                        </AnimatedGroup>
+                        {/* <HoverBorderGradientDemo/> */}
+                        <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
+                        <div className="mx-auto  px-6">
+                            <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
+
+
+                                <TextEffect
+  preset="fade-in-blur"
+  speedSegment={0.3}
+  as="h1"
+  className="mt-8 pr-2 text-balance font-bold sm:font-light text-2xl sm:text-7xl sm:leading-20"
+>
+  {"Still Waiting for That "}
+  <span className="text-blue-500">Perfect</span><br/>
+  {"Website? We’ll Build It "} 
+</TextEffect>
+
+
+
+
+
+                                <TextEffect
+                                    per="line"
+                                    preset="fade-in-blur"
+                                    speedSegment={0.3}
+                                    delay={0.5}
+                                    as="p"
+                                    className="mx-auto mt-8 max-w-2xl text-balance text-lg">
+                                    We’re a design & development agency that delivers results and boosts businesses. Every creation starts with an idea, and we’re here to bring yours to life.
+                                </TextEffect> 
+
+                            <AnimatedGroup variants={transitionVariants}>
+                                <SpinningTextBasic/>
+                            </AnimatedGroup>
+                                
+                                
+                   
+                   {/* <TextEffect
+                                    per="line"
+                                    preset="fade-in-blur"
+                                    speedSegment={0.3}
+                                    delay={0.5}
+                                    as="p"
+                                    className="mx-auto mt-8 max-w-2xl text-balance text-lg"></TextEffect>
+                            <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                            Modern Solutions for Customer Engagement
+                            </h1>
+                    </TextEffect> */}
+
+{/* <h1 className="relative z-10 py-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-700  text-center font-sans font-bold">
+                            Modern Solutions for Customer Engagement
+                            </h1> */}
+
+                                <AnimatedGroup
+                                    variants={{
+                                        container: {
+                                            visible: {
+                                                transition: {
+                                                    staggerChildren: 0.05,
+                                                    delayChildren: 0.75,
+                                                },
+                                            },
+                                        },
+                                        ...transitionVariants,
+                                    }}
+                                    className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
+                                    <div
+                                        key={1}
+                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)]  p-0.5">
+                                        <Button
+                                            asChild
+                                            size="lg"
+                                            className="bg-black dark:bg-white rounded-xl px-5 text-base">
+                                            <Link href="#link">
+                                                <span className="text-nowrap text-white dark:text-black">Start Building</span>
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                    <Button
+                                        key={2}
+                                        asChild
+                                        size="lg"
+                                        variant="ghost"
+                                        className="h-10.5 rounded-xl px-5 border">
+                                        <Link href="#link">
+                                            <span className="text-nowrap">Request a demo</span>
+                                        </Link>
+                                    </Button>
+                                </AnimatedGroup>
+                            </div>
+                        </div>
+
+                        <AnimatedGroup
+                            variants={{
+                                container: {
+                                    visible: {
+                                        transition: {
+                                            staggerChildren: 0.05,
+                                            delayChildren: 0.75,
+                                        },
+                                    },
+                                },
+                                ...transitionVariants,
+                            }}>
+                            <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+                                <div
+                                    aria-hidden
+                                    className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
+                                />
+                                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl  ">
+                                    {/* <Image
+                                        className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                                        src="/streeatsdemo.png"
+                                        alt="app screen"
+                                        width="2700"
+                                        height="1440"
+                                    />
+                                    <Image
+                                        className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
+                                        src="/streeatsdemo.png"
+                                        alt="app screen"
+                                        width="2700"
+                                        height="1440"
+                                    /> */}
+                                    {/* <SafariDemo/> */}
+                                    <div className="relative -mr-56 overflow-hidden px-2 sm:mr-0 ">
+                                <div
+                                    aria-hidden
+                                    className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
+                                />
+                                <div className=" bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl  p-4 ">
+                                    <Image
+                                        className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                                        src="https://res.cloudinary.com/ducxztw9n/image/upload/behance-cases/carfin-car-search-ai-assistant-ux-ui-design/01.webp"
+                                        alt="app screen"
+                                        width="2700"
+                                        height="1440"
+                                    />
+                                    <Image
+                                        className="z-2  aspect-15/8 relative rounded-2xl  dark:hidden"
+                                        src="https://res.cloudinary.com/ducxztw9n/image/upload/behance-cases/carfin-car-search-ai-assistant-ux-ui-design/01.webp"
+                                        alt="app screen"
+                                        width="2700"
+                                        height="1440"
+                                    />
+
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </AnimatedGroup>
+                    </div>
+                </section>
+
+                
+
+                <LogoCloud/>
+
+                <CardsOnImages/>
+
+
+
+                <Projects/>
+
+                <MarqueeDemo/>
+               
+            </main>
+        </>
+    )
+}
