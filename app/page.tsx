@@ -1,8 +1,6 @@
 // "use client";
 
 import HeroSection from "@/components/HeroSection";
-import { ModeToggle } from "@/components/ModeToggle";
-import { Button } from "@/components/ui/button";
 
 
 export default function Home() {

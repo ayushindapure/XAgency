@@ -1,23 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/motion-primitives/text-effect'
 import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
-import { HeroHeader } from './hero5-header'
-import { SafariDemo } from './SafariDemo'
 import LogoCloud from './logo-cloud'
-import { LineShadowTextDemo } from './LineShadowTextDemo'
-import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { AnimatedShinyTextDemo } from './AnimatedShinyTextDemo'
-import { HoverBorderGradientDemo } from './HoverBorderGradientDemo'
 import CardsOnImages from './CardsOnImages'
 import Projects from './Projects'
-// import { Marquee3D } from './Marquee3D'
 import { SpinningTextBasic } from './SpiningTextBasics'
 import { MarqueeDemo } from './MarqueeDemo'
-import Iridescence from './Iridescence'
 
 const transitionVariants = {
     item: {

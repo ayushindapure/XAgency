@@ -1,8 +1,6 @@
 "use client"
 import React from 'react'
 import { useEffect } from 'react'
-import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
-import ScrollFloat from './ScrollFloat'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
