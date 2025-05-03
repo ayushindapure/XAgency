@@ -59,11 +59,15 @@ const config: Config = {
       keyframes: {
         "bg-position": {
           "0%": { backgroundPosition: "0% 50%" },
-           "100%": { backgroundPosition: "100% 50%" },
-          },
-        "marquee": {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
         "accordion-down": {
           from: { height: "0" },
@@ -73,22 +77,17 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        'shiny-text': {
-          '0%': { backgroundPosition: '0% 0%' },
-          '100%': { backgroundPosition: '100% 0%' },
+        "shiny-text": {
+          "0%": { backgroundPosition: "0% 0%" },
+          "100%": { backgroundPosition: "100% 0%" },
         },
-        
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        marquee: 'marquee var(--duration) linear infinite',
-        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "shiny-text": "shiny-text 2s linear infinite",
-      },
-      'marquee-vertical': {
-        from: { transform: 'translateY(0)' },
-        to: { transform: 'translateY(calc(-100% - var(--gap)))' },
       },
     },
   },

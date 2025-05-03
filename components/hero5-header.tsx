@@ -30,10 +30,10 @@ export const HeroHeader = () => {
         <div
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
-            isScrolled && "bg-background/50 max-w-4xl rounded-full border-neutral-400 border shadow-lg backdrop-blur-lg lg:px-5",
+            isScrolled && "sm:bg-background/50 max-w-4xl sm:rounded-full sm:border-neutral-400 sm:border shadow-lg sm:backdrop-blur-lg   lg:px-5",
           )}
         >
-          <div className="relative flex backdrop-blur-lg flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+          <div className="relative flex sm:backdrop-blur-lg flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
               <Link href="/" aria-label="home" className="flex items-center space-x-2">
                 {/* <Logo /> */}

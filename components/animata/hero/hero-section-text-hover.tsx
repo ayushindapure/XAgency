@@ -68,7 +68,7 @@ const HeroSectionTextHover: React.FC<HeroCardProps> = ({ className }) => {
       )}
     >
       <div className="mb-2 flex flex-col items-center justify-center gap-3">
-        <div className="text-normal flex flex-col items-center justify-center p-5 font-bold sm:text-xl md:text-5xl">
+        <div className="text-md flex flex-col items-center justify-center p-5 font-bold sm:text-xl md:text-6xl" >
           <div className="mt-5">
             {/* <Map size={40} className="fill-zinc-900 text-white" /> */}
             <img src="/mac.png" height={150} width={150}></img>

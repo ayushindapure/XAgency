@@ -9,7 +9,10 @@ import { AnimatedShinyTextDemo } from './AnimatedShinyTextDemo'
 import CardsOnImages from './CardsOnImages'
 import Projects from './Projects'
 import { SpinningTextBasic } from './SpiningTextBasics'
-import { MarqueeDemo } from './MarqueeDemo'
+import MarqueeDemo from './MarqueeDemo'
+import { AnimatedTestimonialsDemo } from './AnimatedTestimonialsDemo'
+import FAQ from './FAQ'
+import FAQsThree from './FAQsThree'
 
 const transitionVariants = {
     item: {
@@ -212,8 +215,17 @@ export default function HeroSection() {
 
 
                 <Projects/>
+                <div className='px-5 sm:px-20'>
+                <span className="inline-block py-1 px-2 rounded border-2 border-blue-500 text-blue-500 text-xs font-medium tracking-widest">WHY TRUST US ?</span>
+<h2 className="sm:text-5xl  text-2xl title-font font-medium mt-4 mb-4">
+  Because these amazing brands did—and saw real results.
+</h2>
 
+        </div>
                 <MarqueeDemo/>
+                <AnimatedTestimonialsDemo/>
+
+                <FAQsThree/>
                
             </main>
         </>

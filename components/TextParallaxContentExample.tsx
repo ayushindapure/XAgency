@@ -156,7 +156,7 @@ const OverlayCopy = ({
 
 const ExampleContent = () => (
 
-  <div className="max-w-5xl  ">
+  <div className="max-w-5xl px-5 ">
     <Link href="https://www.Radiaant.com/" className="text-7xl bold flex items-center text-red-500">Radiaant <ArrowUpRight className="pl-2 text-neutral-500" size={75}/> </Link>
     
     <p className=" py-16 mb-4 text-xl text-neutral-500 md:text-2xl">
@@ -199,11 +199,11 @@ Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot 
 );
 
 const ExampleContent2 = () => (
-  <div className="max-w-5xl">
+  <div className="max-w-5xl ">
     
     <Link href="https://www.franklintempleton.com/" className="text-7xl bold flex items-center text-blue-500">Franklin Templeton <ArrowUpRight className="pl-2 text-neutral-200" size={75}/> </Link>
     
-    <p className=" py-16 mb-4 text-xl text-neutral-500 md:text-2xl">
+    <p className=" py-16  mb-4 text-xl text-neutral-500 md:text-2xl ">
     Designed, Developed, Deployed a full scale website with modern and UI rich website for a BPO and ISO certified company which provides services to many well known companies like
 Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot and an admin panel.
       </p>
@@ -242,7 +242,7 @@ Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot 
 );
 
 const ExampleContent3 = () => (
-  <div className="max-w-5xl">
+  <div className="max-w-5xl sm:px-1 px-5" >
     
   <Link href="https://www.franklintempleton.com/" className="text-7xl bold flex items-center text-lime-500"> Hemera Global <ArrowUpRight className="pl-2 text-neutral-200" size={75}/> </Link>
   
@@ -286,7 +286,7 @@ Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot 
 );
 
 const ExampleContent4 = () => (
-  <div className="max-w-5xl">
+  <div className="max-w-5xl sm:px-1 px-5">
     <Link href="https://www.streeats.in/" className="text-7xl bold flex items-center text-orange-500"> Streeats <ArrowUpRight className="pl-2 text-neutral-200" size={75}/> </Link>
     
   
@@ -330,7 +330,7 @@ Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot 
 );
 
 const ExampleContent5 = () => (
-  <div className="max-w-5xl">
+  <div className="max-w-5xl sm:px-1 px-5">
     <Link href="https://georgecafe.netlify.app/" className="text-7xl bold flex items-center text-yellow-600"> George Cafe <ArrowUpRight className="pl-2 text-neutral-200" size={75}/> </Link>
     
   
@@ -375,7 +375,7 @@ Tata, LnT, Bajaj, VI, Axis Bank and HDFC. Implemented a backend-powered chatbot 
 
 
 const ExampleContent6 = () => (
-  <div className="max-w-5xl">
+  <div className="max-w-5xl sm:px-1 px-5">
     <Link href="https://delta-cleaning.netlify.app/" className="text-7xl bold flex items-center text-green-600"> Delta Cleaning <ArrowUpRight className="pl-2 text-neutral-200" size={75}/> </Link>
     
   

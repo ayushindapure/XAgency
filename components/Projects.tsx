@@ -1,12 +1,7 @@
 import React from 'react'
-import { SafariDemo } from './SafariDemo'
 import { FaMoneyBill } from 'react-icons/fa6'
-import { GiGrowth } from 'react-icons/gi'
 import { SiStockx } from 'react-icons/si'
-import { PiMarkerCircleThin } from 'react-icons/pi'
-import { MdShoppingCartCheckout } from 'react-icons/md'
-import { FileChartColumnIncreasingIcon, LaptopIcon, LaptopMinimal, MoveUpRight } from 'lucide-react'
-import { CgArrowTopRight, CgDesignmodo } from 'react-icons/cg'
+import { FileChartColumnIncreasingIcon, LaptopIcon, MoveUpRight } from 'lucide-react'
 import Link from 'next/link'
 import { RiCompassLine, RiGuideLine } from 'react-icons/ri'
 
@@ -173,11 +168,11 @@ const Projects = () => {
 
 
         {/* left align */}
+        
 <div  className="">
   <div className="max-w-6xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
     <h1 data-aos="fade-right" className="font-semibold text-neutral-400 text-5xl md:text-7xl">
       <span className="text-orange-500 ">"Are they </span> <img className="inline-block h-16 w-24 rounded-full" src="/think3.jpg" alt="Avatar"></img> <br/> <span className='text-neutral-900 dark:text-white'>Skilled Enough?</span> "
-      
     </h1>
   </div>
 </div>

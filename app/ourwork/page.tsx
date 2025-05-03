@@ -4,6 +4,7 @@ import HeroSectionTextHover from '@/components/animata/hero/hero-section-text-ho
 import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
 import React from 'react'
 import ContentSection from '../ContentSection'
+import TrueFocus from '@/components/TrueFocus'
 const transitionVariants = {
     item: {
         hidden: {
@@ -29,6 +30,7 @@ const page = () => {
         <section className='pt-10 sm:pt-20 flex justify-center items-center '>
         <AnimatedGroup variants={transitionVariants}>
             <HeroSectionTextHover />
+
             {/* <figure>
         <img className="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
         <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
@@ -36,7 +38,7 @@ const page = () => {
         </figcaption>
       </figure> */}
             
-            <div className='px-5 sm:px-1'>
+            <div className=''>
                 <TextParallaxContentExample />
             </div>
         </AnimatedGroup>

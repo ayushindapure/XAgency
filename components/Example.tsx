@@ -12,6 +12,7 @@ import { PiBrandyBold, PiClockThin } from 'react-icons/pi'
 import { TbBrandBing, TbBrandDingtalk, TbGrowth } from 'react-icons/tb'
 import { TextEffect } from './motion-primitives/text-effect'
 import { AnimatedGroup } from './motion-primitives/animated-group'
+import TrueFocus from './TrueFocus'
 const transitionVariants = {
     item: {
         hidden: {
@@ -102,12 +103,24 @@ export default function Example() {
     <div className="py-12 sm:py-5">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-        <TextEffect  preset='fade-in-blur' speedReveal={1.3} speedSegment={0.5} className="text-base/7 font-semibold ">Services We Offer</TextEffect>
+        <TextEffect  preset='fade-in-blur' speedReveal={1.3} speedSegment={0.5} className="text-base/7 font-semibold ">We offer services with</TextEffect>
           {/* <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty  sm:text-5xl lg:text-balance"> */}
-          <TextEffect className='mt-2 text-4xl font-semibold tracking-tight text-pretty  sm:text-5xl lg:text-balance' preset='fade-in-blur' speedReveal={1.1} speedSegment={0.3}>
-            Websites That Do More Than Just Look Good
+          {/* <TextEffect className='mt-2 text-4xl font-semibold tracking-tight text-pretty  sm:text-5xl lg:text-balance' preset='fade-in-blur' speedReveal={1.1} speedSegment={0.3}> */}
+            {/* Websites That Do More Than Just Look Good */}
       {/* Animate your ideas with motion-primitives. */}
-    </TextEffect>
+    {/* </TextEffect> */}
+    <AnimatedGroup variants={transitionVariants}>
+    <div className='pt-5'>
+            <TrueFocus
+sentence="True Focus."
+manualMode={false}
+blurAmount={5}
+borderColor="lightgreen"
+animationDuration={2}
+pauseBetweenAnimations={1}
+/>
+</div>
+</AnimatedGroup>
           {/* </p> */}
           <TextEffect preset='fade-in-blur' speedReveal={2} speedSegment={0.7} className="mt-6 text-lg/8 text-neutral-400">
             Your website isn’t just a digital brochure — it’s your best salesperson, working 24/7. We design and build websites that convert visitors into customers, boost credibility, and drive measurable ROI. Whether you're a startup or scaling business, we focus on performance, not just pixels.
