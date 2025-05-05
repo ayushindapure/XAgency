@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { HeroHeader } from "@/components/hero5-header";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import Footer from "@/components/Footer";
+import { StickyBannerDemo } from "@/components/StickyBannerDemo";
 
 
 const geistSans = Geist({
@@ -29,16 +30,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script src="https://cal.com/embed/embed.js" async></script>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
+
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
+            
             <HeroHeader/>
             {children}
 

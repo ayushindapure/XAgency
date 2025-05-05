@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react"
 import React from "react"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "./ModeToggle"
+import { Logo } from "./logo"
+import { Button } from "./ui/button"
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -30,13 +32,14 @@ export const HeroHeader = () => {
         <div
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
-            isScrolled && "sm:bg-background/50 max-w-4xl sm:rounded-full sm:border-neutral-400 sm:border shadow-lg sm:backdrop-blur-lg   lg:px-5",
+            isScrolled && "sm:bg-background/50 max-w-4xl sm:rounded-full sm:border-neutral-400 sm:border shadow-lg bg-opacity-60 backdrop-filter backdrop-blur-lg   lg:px-5",
           )}
         >
           <div className="relative flex sm:backdrop-blur-lg flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
-              <Link href="/" aria-label="home" className="flex items-center space-x-2">
-                {/* <Logo /> */}
+              <Link href="/" aria-label="home" className="flex items-center ">
+                <Logo />
+
               </Link>
               <button
                 onClick={() => setMenuState(!menuState)}
@@ -77,25 +80,16 @@ export const HeroHeader = () => {
                   ))}
                 </ul>
               </div>
-              <ModeToggle />
-              {/* <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-              <ModeToggle />
-                <Button asChild variant="outline" size="sm" className={cn(isScrolled && "lg:hidden")}>
-                  <Link href="#">
-                    <span>Login</span>
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 items-center md:w-fit">
+              
+                <Button asChild  className={cn(isScrolled && "lg:hidden")}>
+                  <Link className="border-black-400 border-1" href="/contactus">
+                    <span>Hire Us</span>
                   </Link>
                 </Button>
-                <Button asChild size="sm" className={cn(isScrolled && "lg:hidden")}>
-                  <Link className="border-black-400 border-2" href="#">
-                    <span>Sign Up</span>
-                  </Link>
-                </Button>
-                <Button asChild size="sm" className={cn(isScrolled ? "lg:inline-flex" : "hidden")}>
-                  <Link href="#">
-                    <span>Get Started</span>
-                  </Link>
-                </Button>
-              </div> */}
+                <ModeToggle />
+              </div>
+              
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 // "use client";
 
 import HeroSection from "@/components/HeroSection";
+import { StickyBannerDemo } from "@/components/StickyBannerDemo";
 
 
 export default function Home() {
@@ -10,7 +11,6 @@ export default function Home() {
         {/* <div className="text-green-400 dark:text-red-800">
             Hello is the dark class working?
         </div> */}
-
       <HeroSection/>
 
       {/* <div>

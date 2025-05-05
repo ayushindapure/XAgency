@@ -4,6 +4,7 @@ import { SiStockx } from 'react-icons/si'
 import { FileChartColumnIncreasingIcon, LaptopIcon, MoveUpRight } from 'lucide-react'
 import Link from 'next/link'
 import { RiCompassLine, RiGuideLine } from 'react-icons/ri'
+import FeaturesSection from './FeaturesSection'
 
 const Projects = () => {
   return (
@@ -238,6 +239,8 @@ const Projects = () => {
     </div>
   </div>
 </div>
+
+<FeaturesSection/>
 
 <div className="">
   <div className="max-w-6xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">

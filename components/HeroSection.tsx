@@ -13,6 +13,10 @@ import MarqueeDemo from './MarqueeDemo'
 import { AnimatedTestimonialsDemo } from './AnimatedTestimonialsDemo'
 import FAQ from './FAQ'
 import FAQsThree from './FAQsThree'
+import { Calendar } from 'lucide-react'
+import { FireIcon } from '@heroicons/react/24/outline'
+import { AnimatedTooltip } from './ui/animated-tooltip'
+import { AnimatedTooltipPreview } from './AnimatedTooltipPreview'
 
 const transitionVariants = {
     item: {
@@ -50,6 +54,7 @@ export default function HeroSection() {
                     <div className="relative pt-24 md:pt-36">
                     <AnimatedGroup variants={transitionVariants}>
                         <AnimatedShinyTextDemo/>
+                        {/* <AnimatedTooltipPreview/> */}
                         
                         </AnimatedGroup>
                         {/* <HoverBorderGradientDemo/> */}
@@ -57,17 +62,17 @@ export default function HeroSection() {
                         <div className="mx-auto  px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
 
-
-                                <TextEffect
+                            <TextEffect
   preset="fade-in-blur"
   speedSegment={0.3}
   as="h1"
-  className="mt-8 pr-2 text-balance font-bold sm:font-light text-2xl sm:text-7xl sm:leading-20"
+  className="mt-8 pr-2 text-balance font-light text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug sm:leading-tight md:leading-tight lg:leading-[4.5rem]"
 >
   {"Still Waiting for That "}
-  <span className="text-blue-500">Perfect</span><br/>
+  <span className="text-blue-500">Perfect</span><br />
   {"Website? We’ll Build It "} 
 </TextEffect>
+
 
 
 
@@ -79,7 +84,7 @@ export default function HeroSection() {
                                     speedSegment={0.3}
                                     delay={0.5}
                                     as="p"
-                                    className="mx-auto mt-8 max-w-2xl text-balance text-lg">
+                                    className="mx-auto mt-8 max-w-2xl text-balance text-md sm:text-lg">
                                     We’re a design & development agency that delivers results and boosts businesses. Every creation starts with an idea, and we’re here to bring yours to life.
                                 </TextEffect> 
 
@@ -121,25 +126,42 @@ export default function HeroSection() {
                                     <div
                                         key={1}
                                         className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)]  p-0.5">
-                                        <Button
+                                        {/* <Button
                                             asChild
                                             size="lg"
                                             className="bg-black dark:bg-white rounded-xl px-5 text-base">
                                             <Link href="#link">
                                                 <span className="text-nowrap text-white dark:text-black">Start Building</span>
                                             </Link>
-                                        </Button>
+                                        </Button> */}
+                                        <div className='flex items-center bg-black text-white dark:text-black dark:bg-white border-2 border-white px-5 py-3 rounded-xl '>
+                                        <Calendar size={20} className="mr-2 " />
+                                        <a
+  href="https://cal.com/mellabs/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  >
+    
+    Schedule Free Call
+</a>
+                                        </div>
+
+
                                     </div>
-                                    <Button
-                                        key={2}
-                                        asChild
+                                    {/* <Button
                                         size="lg"
                                         variant="ghost"
-                                        className="h-10.5 rounded-xl px-5 border">
+                                        className="bg-black text-black dark:text-black dark:bg-white border-2 border-white px-5 py-3 rounded-xl ">
                                         <Link href="#link">
                                             <span className="text-nowrap">Request a demo</span>
                                         </Link>
-                                    </Button>
+                                    </Button> */}
+<Link
+  href="/ourwork"
+  rel="noopener noreferrer"
+  className=" text-black dark:text-white  border-2 border-black dark:border-white px-5 py-3 rounded-xl ">
+  Our Work 
+</Link>
                                 </AnimatedGroup>
                             </div>
                         </div>
@@ -217,7 +239,7 @@ export default function HeroSection() {
                 <Projects/>
                 <div className='px-5 sm:px-20'>
                 <span className="inline-block py-1 px-2 rounded border-2 border-blue-500 text-blue-500 text-xs font-medium tracking-widest">WHY TRUST US ?</span>
-<h2 className="sm:text-5xl  text-2xl title-font font-medium mt-4 mb-4">
+<h2 className="sm:text-5xl   text-2xl title-font font-medium mt-4 mb-4">
   Because these amazing brands did—and saw real results.
 </h2>
 

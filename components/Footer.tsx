@@ -5,6 +5,7 @@ import { motion, useInView } from 'motion/react';
 
 // import useNewsLetter, { ClientData } from '@/lab/hooks/useNewsLetter'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const pathArr = [
   'M55.7447 0H15.3191L0 45.5836H18.2979L4.25532 81.7065H16.5957L5.95745 126L34.4681 82.9966L45.9574 126H120V0H104.681L104.255 110.519H58.2979L45.9574 64.5051H28.0851L42.9787 39.1331L61.7021 106.648H99.5745V0H80V94.6075H76.1702L55.7447 0Z',
@@ -170,7 +171,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=' md:py-4 border-gray-200'>
-            <motion.svg
+            {/* <motion.svg
               width='776'
               ref={ref}
               height='137'
@@ -193,7 +194,16 @@ const Footer = () => {
                   </>
                 );
               })}
-            </motion.svg>
+            </motion.svg> */}
+            <div className=''>
+            <Image
+              src='/mallabslogoblue.png'
+              alt='Logo'
+              className=' sm:h-fit h-20 md:px-8 px-2 footer-logo w-full'
+              width={200}
+              height={100}
+/>
+              </div>
           </div>
           <div className='flex md:flex-row flex-col-reverse gap-3 justify-between py-2'>
             <span className='font-medium'>
